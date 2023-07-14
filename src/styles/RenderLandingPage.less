@@ -33,28 +33,50 @@
     font-size: 3rem;
     color: @white;
     font-family: 'moneta';
+    margin-bottom: 10px; // changed margin size btn h1 and h3
 }
 
 .header-text-container h3 {
     font-family: 'beatrice regular';
     color: @white;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 // .graphs-section {
 //  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
 // }
 
+.graphs-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graphs-name {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'beatrice regular';
+}
+
 .data-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
+    font-size: 10px;
 }
 
 .view-more-data-btn-container {
-    height: 44px;
-    width: 180px;
+    height: 22px;
+    width: 160px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10%;
