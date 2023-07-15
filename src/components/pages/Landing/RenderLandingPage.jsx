@@ -106,8 +106,8 @@ function RenderLandingPage(props) {
 
         <div class="bottom-section">
           <h1 class="bottom-title">Systemic Disparity Insights</h1>
-          <div class="text-container">
-            <div class="percentage-description-container">
+          <div class="percentage-wrapper">
+            <div class="percentage-container">
               <span class="percentage">36%</span>
               <div class="percentage-description">
                 By the end of the Trump administration, the average asylum
@@ -115,14 +115,14 @@ function RenderLandingPage(props) {
                 in fiscal year 2016 to 28 percent in fiscal year 2022.
               </div>
             </div>
-            <div class="percentage-description-container">
+            <div class="percentage-container">
               <span class="percentage">5%</span>
               <div class="percentage-description">
                 The New York asylum office grant rate dropped to 5 percent in
                 fiscal year 2020.
               </div>
             </div>
-            <div class="percentage-description-container">
+            <div class="percentage-container">
               <span class="percentage">6x Lower</span>
               <div class="percentage-description">
                 Between fiscal year 2017 and 2020, the New York asylum office's
@@ -130,6 +130,17 @@ function RenderLandingPage(props) {
                 asylum office.
               </div>
             </div>
+          </div>
+        </div>
+        <div className="read-more-container">
+          <div className="view-more-read-btn-container">
+            <Button
+              type="default"
+              style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+              onClick={() => history.push('/graphs')}
+            >
+              Read More
+            </Button>
           </div>
         </div>
 
