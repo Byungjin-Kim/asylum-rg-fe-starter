@@ -15,7 +15,7 @@ import { Button } from 'antd';
 import { useHistory } from 'react-router-dom';
 // for the purposes of testing PageNav
 // import PageNav from '../../common/PageNav';
-import { PageNav } from '../../common/PageNav';
+import { PageNav } from '../../common/PageNav'; // question 1. what is testing PageNav?
 
 function RenderLandingPage(props) {
   const scrollToTop = () => {
@@ -78,7 +78,7 @@ function RenderLandingPage(props) {
           <Button
             type="default"
             style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-            onClick={() => history.push('/graphs')}
+            onClick={() => history.push('/graphs')} // question 2. need to navigate to Download the Data
           >
             Download the Data
           </Button>
@@ -101,43 +101,43 @@ function RenderLandingPage(props) {
           </h3>
         </div>
       </div>
-      <div>
-        {/* Bottom Section: Add code here for the graphs section for your first ticket */}
 
-        <div class="bottom-section">
-          <h1 class="bottom-title">Systemic Disparity Insights</h1>
-          <div class="percentage-wrapper">
-            <div class="percentage-container">
-              <span class="percentage">36%</span>
-              <div class="percentage-description">
-                By the end of the Trump administration, the average asylum
-                office grant rate had 36 percent from an average of 44 percent
-                in fiscal year 2016 to 28 percent in fiscal year 2022.
-              </div>
+      {/* Bottom Section: Add code here for the graphs section for your first ticket */}
+
+      <div class="bottom-section">
+        <h1 class="bottom-title">Systemic Disparity Insights</h1>
+        <div class="percentage-wrapper">
+          <div class="percentage-container">
+            <span class="percentage">36%</span>
+            <div class="percentage-description">
+              By the end of the Trump administration, the average asylum office
+              grant rate had 36 percent from an average of 44 percent in fiscal
+              year 2016 to 28 percent in fiscal year 2022.
             </div>
-            <div class="percentage-container">
-              <span class="percentage">5%</span>
-              <div class="percentage-description">
-                The New York asylum office grant rate dropped to 5 percent in
-                fiscal year 2020.
-              </div>
+          </div>
+          <div class="percentage-container">
+            <span class="percentage">5%</span>
+            <div class="percentage-description">
+              The New York asylum office grant rate dropped to 5 percent in
+              fiscal year 2020.
             </div>
-            <div class="percentage-container">
-              <span class="percentage">6x Lower</span>
-              <div class="percentage-description">
-                Between fiscal year 2017 and 2020, the New York asylum office's
-                average grant rate was six times lower than the San Francisco
-                asylum office.
-              </div>
+          </div>
+          <div class="percentage-container">
+            <span class="percentage">6x Lower</span>
+            <div class="percentage-description">
+              Between fiscal year 2017 and 2020, the New York asylum office's
+              average grant rate was six times lower than the San Francisco
+              asylum office.
             </div>
           </div>
         </div>
+
         <div className="read-more-container">
           <div className="view-more-read-btn-container">
             <Button
               type="default"
               style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-              onClick={() => history.push('/graphs')}
+              onClick={() => history.push('/graphs')} // need to navigate to Read More
             >
               Read More
             </Button>
