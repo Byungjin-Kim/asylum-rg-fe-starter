@@ -75,13 +75,12 @@ function RenderLandingPage(props) {
           >
             View the Data
           </Button>
-          <Button
-            type="default"
-            style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-            onClick={() => history.push('/graphs')} // question 2. need to navigate to Download the Data
+          <a
+            href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv"
+            className="download-button"
           >
             Download the Data
-          </Button>
+          </a>
         </div>
       </div>
 

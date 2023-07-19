@@ -66,9 +66,10 @@
     font-family: 'beatrice regular';
 }
 
+// data buttons
+
 .data-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 40vh;
 }
@@ -78,14 +79,68 @@
     justify-content: flex-end;
     width: 280px;
     margin: 0 auto;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
 
 .view-more-data-btn-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 15px;
     font-size: 11px;
     height: 25px;
 }
+
+.view-more-data-btn-container .download-button {
+    background-color: #404C4A;
+    color: #FFFFFF;
+    line-height: 1.5715;
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 11px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 400;
+    white-space: nowrap;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+}
+
+.view-more-data-btn-container .download-button:hover {
+    border: 1px solid #4c5352;
+}
+
+// .view-more-data-btn-container .download-button {
+//     background-color: #404C4A;
+//     color: #FFFFFF;
+//     line-height: 1.5715;
+//     position: relative;
+//     display: inline-block;
+//     font-weight: 400;
+//     white-space: nowrap;
+//     text-align: center;
+//     background-image: none;
+//     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+//     cursor: pointer;
+//     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+//     touch-action: manipulation;
+//     height: 32px;
+//     padding: 4px 15px;
+//     font-size: 14px;
+//     border-radius: 2px;
+//     color: rgba(0, 0, 0, 0.85);
+//     border: 1px solid #d9d9d9;
+//     background: #fff;
+// }
 
 // middle section
 .middle-section {
