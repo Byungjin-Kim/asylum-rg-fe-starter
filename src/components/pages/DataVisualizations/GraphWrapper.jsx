@@ -73,6 +73,8 @@ function GraphWrapper(props) {
     
     */
 
+    const apiUrl = 'https://hrf-asylum-be-b.herokuapp.com/cases';
+
     if (office === 'all' || !office) {
       axios
         .get(process.env.REACT_APP_API_URI, {

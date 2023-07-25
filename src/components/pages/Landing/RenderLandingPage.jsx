@@ -66,6 +66,7 @@ function RenderLandingPage(props) {
           <div className="graphs-name">Search Grant Rates Over Time</div>
         </div>
       </div>
+
       <div className="data-container">
         <div className="view-more-data-btn-container">
           <Button
