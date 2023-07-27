@@ -73,11 +73,18 @@ function GraphWrapper(props) {
     
     */
 
-    const apiUrl = 'https://hrf-asylum-be-b.herokuapp.com/cases';
+    // endPoint = ${apiUrl}/summary - from year[0] to year[1]
+    // or using params?
+    // params: {
+    //         from: years[0],
+    //         to: years[1],
+    //       },
+    //     })
 
     if (office === 'all' || !office) {
       axios
-        .get(process.env.REACT_APP_API_URI, {
+        .get(`${process.env.REACT_APP_API_URI}/fiscalSummary`, {
+          // fiscal
           // mock URL, can be simply replaced by `${Real_Production_URL}/summary` in prod!
           params: {
             from: years[0],
@@ -85,14 +92,16 @@ function GraphWrapper(props) {
           },
         })
         .then(result => {
-          stateSettingCallback(view, office, test_data); // <-- `test_data` here can be simply replaced by `result.data` in prod!
+          console.log(result.data);
+          stateSettingCallback(view, office, test_data);
+          // <-- `test_data` here can be simply replaced by `result.data` in prod!
         })
         .catch(err => {
           console.error(err);
         });
     } else {
       axios
-        .get(process.env.REACT_APP_API_URI, {
+        .get(`${process.env.REACT_APP_API_URI}/fiscalSummary`, {
           // mock URL, can be simply replaced by `${Real_Production_URL}/summary` in prod!
           params: {
             from: years[0],
@@ -101,7 +110,7 @@ function GraphWrapper(props) {
           },
         })
         .then(result => {
-          stateSettingCallback(view, office, test_data); // <-- `test_data` here can be simply replaced by `result.data` in prod!
+          stateSettingCallback(view, office, result.data); // <-- `test_data` here can be simply replaced by `result.data` in prod!
         })
         .catch(err => {
           console.error(err);
