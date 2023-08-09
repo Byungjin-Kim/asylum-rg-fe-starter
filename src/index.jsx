@@ -13,6 +13,7 @@ import { LandingPage } from './components/pages/Landing';
 
 import { FooterContent, SubFooter } from './components/Layout/Footer';
 import { HeaderContent } from './components/Layout/Header';
+import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
 
 // import { TablePage } from './components/pages/Table';
 
@@ -29,9 +30,11 @@ const store = configureStore({ reducer: reducer });
 ReactDOM.render(
   <Router>
     <Provider store={store}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <Auth0ProviderWithHistory>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </Auth0ProviderWithHistory>
     </Provider>
   </Router>,
   document.getElementById('root')
