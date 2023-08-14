@@ -10,7 +10,9 @@ import {
 import 'antd/dist/antd.less';
 import { NotFoundPage } from './components/pages/NotFound';
 import { LandingPage } from './components/pages/Landing';
-import ProfilePage from './components/pages/profilePage';
+
+import ViewProfilePage from './components/pages/ViewPage';
+
 import { FooterContent, SubFooter } from './components/Layout/Footer';
 import { HeaderContent } from './components/Layout/Header';
 import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
@@ -57,7 +59,7 @@ export function App() {
       <Switch>
         <Route path="/" exact component={LandingPage} />
         <Route path="/graphs" component={GraphsContainer} />
-        <Route path="/profile" component={ProfilePage} />
+        <Route path="/profile" exact component={ViewProfilePage} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer
