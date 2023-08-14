@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Logo from '../../styles/Images/WhiteLogo.png';
 import { colors } from '../../styles/data_vis_colors';
 import AuthNav from '../../auth/auth-nav';
-import '../../styles/RenderLandingPage.less';
 
 const { primary_accent_color } = colors;
 
